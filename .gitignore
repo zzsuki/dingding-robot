@@ -1,0 +1,8 @@
+*.py[cd]
+venv
+.idea
+.env
+test.db
+__pycache__
+debug.py
+*.db
