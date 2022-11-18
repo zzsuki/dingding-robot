@@ -1,12 +1,12 @@
 {% if alerts|length > 0 -%}
 {% for alert in alerts -%}
 **<font color=red>检测到服务器异常</font>**  
-**告警时间**：{{ alert.startsAt }}  
 **告警级别**：{{ alert.labels.severity }}  
 **告警类型**：{{ alert.labels.alertname }}  
 **故障主机**：{{ alert.labels.instance }}  
 **告警主题**：{{ alert.annotations.summary }}  
 **告警详情**：{{ alert.annotations.description }}  
+**告警时间**：{{ alert.startsAt }}  
 {% endfor %}
 {% endif %}
 {%- if resolved|length > 0 -%}
