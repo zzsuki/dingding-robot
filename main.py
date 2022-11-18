@@ -54,4 +54,4 @@ async def webhook():
 if __name__ == '__main__':  
     if not ROBOT_SECRET or not ROBOT_TOKEN:
         raise ValueError('未同时提供机器人secret和token, 请检查环境变量配置是否正确')
-    uvicorn.run("main:app", host="0.0.0.0", port=8020, log_level="info")
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, log_level="info")
